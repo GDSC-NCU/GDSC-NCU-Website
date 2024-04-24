@@ -1,14 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import LOGO from '../Assets/logo.png'; 
-import './Header.css';
 import '../App.css';
-import Event from '../Pages/Event';
-import Team from '../Pages/Team';
-import RoadMap from '../Pages/RoadMap';
-import Blog from '../Pages/Blog';
-import About from '../Pages/About';
-import Home from '../Pages/Home';
+import LOGO from '../Assets/logo.png';
+import './Header.css';
 
 
 function Header() {
