@@ -1,37 +1,31 @@
 import React from 'react';
 import './App.css';
-import Footer from './Components/Footer';
-import {
-  Route,
-  RouterProvider,
-  createBrowserRouter,
-  createRoutesFromElements
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Error from './Pages/Error';
 import Layout from './Layouts/Layout';
 import Home from './Pages/Home/Home.jsx';
-import Event from './Pages/Event/Event.jsx';
 import About from './Pages/About/About.jsx';
-
-const router= createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' errorElement={<Error/>}>
-      <Route path='/' element={<Layout/>}  >
-        <Route index element={<Home/>}/>
-        {/* <Route index path='/Home' element={<Home/>}/> */}
-        <Route index path='/About' element={<About/>}/>
-        <Route index path='/Event' element={<Event/>}/>
-      </Route>
-      {/* <Route path='/admin' element={<Admin/>}/> */}
-    </Route>
-  )  
-)
+import Event from './Pages/Event/Event.jsx';
+import Team from './Pages/Team/Team.jsx';
+import RoadMap from './Pages/RoadMap/RoadMap.jsx';
+import Blog from './Pages/Blog/Blog.jsx';
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router}></RouterProvider>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Event" element={<Event />} />
+          <Route path="/Team" element={<Team />} />
+          <Route path="/RoadMap" element={<RoadMap />} />
+          <Route path="/Blog" element={<Blog />} />
+        </Route>
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   );
 }
 
