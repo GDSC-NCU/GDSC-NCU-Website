@@ -8,7 +8,7 @@ function Header() {
   return (
     <div>
       <header className="page-header">
-        <a href="/App">Home</a>
+        <a href="/">Home</a>
         <a href="/About">About</a>
         <a href="/Event">Event</a>
         <a href="/App"><img alt="logo" src={LOGO} className="logo-img" /></a>
