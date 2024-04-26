@@ -1,14 +1,18 @@
 .container {
-    height: 100vh;
+    /* height: 100vh;
     width: 100vw;
     max-height: 800px;
     max-width: 1280px;
     min-height: 600px;
-    min-width: 1000px;
+    min-width: 1000px; */
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    max-width: 1200px;
+    flex-direction: row;
+    align-content: center;
   }
   
   .border {
@@ -36,23 +40,12 @@
     justify-content: center;
     align-items: center;
     position: relative;
+  margin-bottom: 20px;
+  filter: grayscale(100%);
   }
   
-  .card0{
-    background-size: 300px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-  }
-  
-  .card0:hover {
-    background-size: 300px;
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
-  
-  .card:hover h2,
-  .card:hover .fa {
-    opacity: 1;
+  .card:hover {
+    filter: grayscale(0%); /* Remove grayscale filter on hover */
   }
   
   h2 {
@@ -63,11 +56,12 @@
     transition: opacity 1s;
   }
   
-  .fa {
-    opacity: 0;
+  .card:hover h2,
+  .card:hover .icons {
+    opacity: 1;
     transition: opacity 1s;
   }
-  
+
   .icons {
     position: absolute;
     fill: #fff;
@@ -79,5 +73,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+  
+
+  .icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .icons a:hover {
+    color: rgb(98, 132, 255); 
+  }
+
+  .card img {
+    object-fit: cover; /* Ensure the image covers the entire container */
+    width: 100%; /* Ensure the image fills the entire container width */
+    height: 100%; /* Ensure the image fills the entire container height */
+    position: absolute; /* Position the image absolutely within the card */
+    top: 0; /* Align the image to the top of the card */
+    left: 0; /* Align the image to the left of the card */
   }
   

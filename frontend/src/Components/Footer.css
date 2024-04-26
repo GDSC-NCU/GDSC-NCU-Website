@@ -1,6 +1,6 @@
 
 footer{
-    position: absolute;
+    position: relative;
     width: 100%;
     min-height: 100px;
     padding: 20px 50px;
@@ -10,6 +10,8 @@ footer{
     background: #3586ff;
     bottom: 0px;
     z-index: 999;
+    font-family: 'poppins';
+    font-weight: 600;
       }
     
       footer .social_icon, footer .menu{
