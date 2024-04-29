@@ -175,7 +175,7 @@ const ParentComponent = () => {
       <AnimatedHeader text="Core Team" />    
       </div>
 
-      <div className="coremembers">
+      <div className="coremembers" style={{ marginBottom: "120px" }}>
         {CoreMembers.map((member, index) => (
           <ProfileTeam
             key={index}
@@ -191,7 +191,7 @@ const ParentComponent = () => {
 <h1  className='teamsectext'><AnimatedHeader text="Coordinators" /></h1>
 
 <br />
-<div className="coordinators">
+<div className="coordinators" style={{ marginBottom: "80px" }}>
         {coordinators.map((member, index) => (
           <ProfileTeam
             key={index}
@@ -203,9 +203,6 @@ const ParentComponent = () => {
           />
         ))}
 </div>
-<br />
-<br />
-<br />
 
     </div>
   );
