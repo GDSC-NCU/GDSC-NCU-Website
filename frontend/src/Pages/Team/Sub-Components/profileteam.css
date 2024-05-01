@@ -16,8 +16,8 @@
   }
   
   .border {
-    height: 369px;
-    width: 290px;
+    height: 365px;
+    width: 240px;
     background: transparent;
     border-radius: 10px;
     transition: border 1s;
@@ -29,8 +29,8 @@
   }
   
   .card {
-    height: 379px;
-    width: 300px;
+    height: 375px;
+    width: 250px;
     border-radius: 10px;
     transition: background 0.8s;
     overflow: hidden;
