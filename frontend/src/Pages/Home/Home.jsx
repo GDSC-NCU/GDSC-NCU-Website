@@ -7,10 +7,12 @@ import FAQ from './Components/FAQ'
 function Home() {
   return (
     <div className='h-full w-full'>
-      <LandingPage></LandingPage>
-      <Opportunities></Opportunities>
-      <JoinUs></JoinUs>
-      <FAQ></FAQ>
+      <LandingPage />
+      <Opportunities />
+      <JoinUs />
+      <div style={{ marginBottom: "200px" }}>
+        <FAQ />
+      </div>
     </div>
   )
 }

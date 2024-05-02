@@ -1,0 +1,24 @@
+img.oppimg{
+    float: left;
+    width: 400px;
+    position: absolute;
+}
+
+.para{
+float: right;
+display: flex;
+flex-direction: column;
+margin-left: 830px;
+gap: 20px;
+letter-spacing:1.2px;
+font-family: 'manrope';
+margin-right: 30px;
+}
+
+h1.opp{
+    font-size:40px;
+}
+
+p.opp-para{
+
+}

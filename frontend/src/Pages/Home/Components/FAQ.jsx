@@ -1,9 +1,11 @@
 import React from 'react'
+import Message from '../Sub-Components/Message'
 
 function FAQ() {
   return (
     <div>
-      FAQ Section
+      <h1 style={{ fontFamily: 'manrope', fontSize: '70px' ,marginLeft:'32px'}}>FAQ's</h1>
+      <Message />
     </div>
   )
 }
