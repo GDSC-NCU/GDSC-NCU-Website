@@ -3,6 +3,7 @@ import './message.css';
 
 const Message = () => {
   return (
+    <div className="Message">
     <div className="message-container">
       <ul className="chat-thread">
         <li>Are we meeting today?</li>
@@ -10,6 +11,7 @@ const Message = () => {
         <li>I was thinking after lunch, I have a meeting in the morning</li>
         <li>GDSC EXAMPLE TEXT HERE</li>
       </ul>
+    </div>
     </div>
   );
 };

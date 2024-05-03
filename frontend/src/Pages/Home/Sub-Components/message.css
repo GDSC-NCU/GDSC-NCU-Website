@@ -1,5 +1,3 @@
-/* message.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
 :root {
@@ -8,6 +6,9 @@
   --chat-thread-avatar-size: 50px;
   --chat-thread-offset: calc(var(--chat-thread-avatar-size) + 30px);
 }
+
+
+.Message{
 
 .message-container {
   font-family: 'Noto Sans', sans-serif;
@@ -111,4 +112,6 @@
   100% {
     margin-right: 0;
   }
+}
+
 }

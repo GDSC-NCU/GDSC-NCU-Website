@@ -163,7 +163,7 @@ const ParentComponent = () => {
   ];
 
   return (
-    <div>
+    <div className='Team'>
       <div className="main-image">
         <img alt='team' src={teamtest} className='teammain'></img>
       </div>

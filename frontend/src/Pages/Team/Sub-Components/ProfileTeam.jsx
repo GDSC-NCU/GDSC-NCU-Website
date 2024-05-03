@@ -10,6 +10,7 @@ const ProfileTeam = ({ name, image, linkedin, github, email }) => {
   };
 
   return (
+    <div className="ProfileTeam">
     <div className="container">
       <div className="card" style={cardStyle}><img src={image} alt={name} />
         <div className="border">
@@ -34,6 +35,7 @@ const ProfileTeam = ({ name, image, linkedin, github, email }) => {
         </div>
         
       </div>
+    </div>
     </div>
   );
 };

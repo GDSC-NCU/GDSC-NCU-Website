@@ -3,6 +3,7 @@ import './info.css'
 
 function Infocards({ title, year, duration, rating, tags, description, poster }) {
   return (
+    <div className="Infocards">
     <div className="card">
       <div className="poster">
         <img src={poster} alt={title} />
@@ -20,6 +21,7 @@ function Infocards({ title, year, duration, rating, tags, description, poster })
         </div>
         <p className="desc">{description}</p>
       </div>
+    </div>
     </div>
   );
 }
