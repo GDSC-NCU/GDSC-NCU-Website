@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import ProfileTeam from './Sub-Components/ProfileTeam';
 import './team.css';
+import $ from 'jquery';
 import teamtest from '../../Assets/teamtest.png';
+import Slider from './Sub-Components/Slider';
 import Ltest from '../../Assets/Ltest.png';
 import test2 from '../../Assets/test2.jpg';
 
@@ -164,9 +166,10 @@ const ParentComponent = () => {
 
   return (
     <div className='Team'>
-      <div className="main-image">
+<Slider />
+      {/* <div className="main-image">
         <img alt='team' src={teamtest} className='teammain'></img>
-      </div>
+      </div> */}
       <div className="teamtext" style={{ marginBottom: "30px" }}>
 
     <AnimatedHeader text="Our Team" style={{ marginBottom: "40px" }} />

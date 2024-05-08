@@ -1,0 +1,65 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600');
+
+/* Slider container */
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+/* Slider list */
+.slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 300px; /* Adjust height */
+  list-style: none;
+  display: flex; /* Change display to flex */
+  transition: transform 0.5s ease; /* Add transition for smooth sliding */
+}
+
+/* Slide item */
+.slider ul li {
+  flex: 0 0 100%; /* Adjust flex to take full width */
+  width: 100%; /* Adjust width */
+  height: 300px; /* Adjust height */
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+/* Navigation buttons */
+.slider a.control_prev,
+.slider a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.slider a.control_prev:hover,
+.slider a.control_next:hover {
+  opacity: 1;
+  transition: all 0.2s ease; /* Use generic transition property */
+}
+
+.slider a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+.slider a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}

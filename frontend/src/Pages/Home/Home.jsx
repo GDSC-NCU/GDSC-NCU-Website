@@ -3,6 +3,7 @@ import LandingPage from './Components/LandingPage'
 import Opportunities from './Components/Opportunities'
 import JoinUs from './Components/JoinUs'
 import FAQ from './Components/FAQ'
+import './Home.css'
 
 function Home() {
   return (
